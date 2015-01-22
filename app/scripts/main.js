@@ -8,7 +8,12 @@ window.ModdroidEditor = {
     Routers: {},
     init: function () {
         'use strict';
-        console.log('Hello from Backbone!');
+
+        // Initialize the toolbar.
+        new ModdroidEditor.Views.Toolbar({
+            el: $('.toolbarContainer')[0]
+        })
+        .render();
     }
 };
 

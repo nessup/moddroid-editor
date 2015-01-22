@@ -1,0 +1,22 @@
+@import "variables";
+
+.sidebar {
+    background-color: #ecebec;
+    border-left: 1px solid $separatorColor;
+    border-right: 1px solid $separatorColor;
+    min-width: 259px;
+    padding-top: $toolbarHeight;
+
+    &.left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+    &.right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
