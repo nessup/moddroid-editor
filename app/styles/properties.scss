@@ -1,0 +1,29 @@
+@import "variables";
+
+.properties {
+    padding: $padding;
+
+    table {
+        width: 100%;
+        // line-height: 28px;
+
+        tr {
+            border-bottom: 1px solid #ccc;
+            td {
+                width: 50%;
+            }
+        }
+    }
+
+    input {
+        padding: $padding/2;
+        background: transparent;
+        border: none;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    input:focus {
+        background: #fff;
+        // border: 2px solid inset;
+    }
+}

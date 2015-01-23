@@ -1,0 +1,10 @@
+<div class="properties">
+    <table data-id="<%= properties.id %>">
+        <% for(var i = 0, data = properties.data; i < data.length; i++) { %>
+            <tr data-key="<%= data[i].key %>" data-type="<%= data[i].type %>">
+                <td><%= data[i].key %></td>
+                <td><input type="text" value="<%= data[i].displayValue %>" /></td>
+            </tr>
+        <% } %>
+    </table>
+</div>

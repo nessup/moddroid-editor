@@ -4,8 +4,16 @@
     background-color: #ecebec;
     border-left: 1px solid $separatorColor;
     border-right: 1px solid $separatorColor;
-    min-width: 259px;
-    padding-top: $toolbarHeight;
+    // min-width: 259px;
+    width: 100%;
+    // padding-top: $toolbarHeight;
+
+    // TODO: remove once other sidebars are added to app.
+    position: absolute;
+    top: $toolbarHeight;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
     &.left {
         position: absolute;
